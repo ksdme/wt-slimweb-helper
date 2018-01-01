@@ -1,7 +1,7 @@
 {
-  "name": "wt_ilp",
+  "name": "wt-slimweb-helper",
   "version": "1.0.0",
-  "description": "ILP BitTorrent Protocol Extension",
+  "description": "Slimweb BitTorrent Protocol Extension",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
     "webtorrent",
     "micropayment"
   ],
-  "author": "Evan Schwartz <evan@ripple.com>",
+  "author": "@ksdme",
   "license": "ISC",
   "dependencies": {
     "bencode": "^0.7.0",

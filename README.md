@@ -1,2 +1,2 @@
-# Slimweb Bittorrent Extension
+# Slimweb BitTorrent Extension
 > Adds deterministic pointer exchanging facilities

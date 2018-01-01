@@ -56,14 +56,14 @@ var wt_slimweb_extension = function (opts) {
     debug('Extended handshake to send: ', this._wire.extendedHandshake);
   }
 
-  wt_slimweb.prototype.name = 'wt_slimweb';
+  wt_slimweb.prototype.name = 'wt_slimweb_extension';
 
   wt_slimweb.prototype.onHandshake = function (infoHash, peerId, extensions) {
     this.peerId = peerId;
   }
 
   wt_slimweb.prototype.onExtendedHandshake = function (handshake) {
-    if (!handshake.m || !handshake.m.wt_slimweb) {
+    if (!handshake.m || !handshake.m.wt_slimweb_extension) {
       return this.emit('slmweb_warning', new Error('Peer does not support wt_slimweb'));
     }
 
@@ -108,3 +108,4 @@ var wt_slimweb_extension = function (opts) {
 };
 
 module.exports = wt_slimweb_extension;
+

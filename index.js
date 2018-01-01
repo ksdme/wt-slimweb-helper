@@ -15,7 +15,7 @@ const debug = require('debug')('wt-slimweb-helper')
  * @param {String} opts.payload
  * @return {BitTorrent Extension}
  */
-module.exports = function (opts) {
+var wt_slimweb_extension = function (opts) {
   if (!opts) {
     opts = {};
   }
@@ -105,4 +105,6 @@ module.exports = function (opts) {
   }
 
   return wt_slimweb;
-}
+};
+
+module.exports = wt_slimweb_extension;
